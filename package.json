@@ -1,0 +1,22 @@
+{
+  "name": "linkedin-cold-messenger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanjasir90/Linkedin-Cold-Messenger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khanjasir90/Linkedin-Cold-Messenger/issues"
+  },
+  "homepage": "https://github.com/khanjasir90/Linkedin-Cold-Messenger#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
