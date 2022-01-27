@@ -8,8 +8,24 @@ app.get('/linkedinLogin', async (req,res,next) => {
 
 app.get('/',(req,res,next)=>{})
 app.get('/auth/linkedin/callback',(req,res,next)=> {
-    console.log("hello");
-    console.log(req.query.code);
+    const code = req.query.code
+    const response = await fetch('https://www.linkedin.com/oauth/v2/accessToken',{
+        method:'POST',
+        headers: {
+            'Content-Type': application/x-www-form-urlencoded
+        },
+        body: {
+            grant_type=authorization_code,
+            code=code,
+            redirect_uri=process.env.CALLBACK_URI,
+            client_id=process.env.CLIENT_ID,
+            client_secret=process.env.CLIENT_SECRET,
+        }
+    })
+    if(response.ok) {
+        const data = await response.json()
+        console.log(data)
+    }
 })
 
 
