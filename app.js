@@ -8,7 +8,8 @@ app.get('/linkedinLogin', async (req,res,next) => {
 
 app.get('/',(req,res,next)=>{})
 app.get('/auth/linkedin/callback',(req,res,next)=> {
-
+    console.log("hello");
+    console.log(req.query.code);
 })
 
 
