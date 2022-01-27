@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/khanjasir90/Linkedin-Cold-Messenger#readme",
   "dependencies": {
+    "axios": "^0.25.0",
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "querystring": "^0.2.1"
   }
 }
